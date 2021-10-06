@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.directmedia</groupId>
+    <artifactId>onlineStore</artifactId>
+    <version>1.0.1-SNAPSHOT</version>
+    <relativePath>../onlineStore/pom.xml</relativePath>
+  </parent>
+  
+  <groupId>com.directmedia.onlineStore</groupId>
+  <artifactId>core</artifactId>
+  <name>core</name>
+  <description>core online store</description>
+  <packaging>jar</packaging>
+  
+  <build>
+  	<plugins>
+  		<plugin><groupId>org.apache.maven.plugins</groupId>
+  		<artifactId>maven-jar-plugin</artifactId>
+  		<version>3.0.2</version>
+  		<configuration>
+  			<archive>
+  				<manifest>
+  					<addClasspath>true</addClasspath>
+  					<mainClass>com.directmedia.onlinestore.core.Startup</mainClass>
+  				</manifest>
+  			</archive>
+  		</configuration>
+  	</plugin>
+  	</plugins>
+  </build>
+  
+</project>
